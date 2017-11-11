@@ -49,5 +49,9 @@ RUN mkdir -p /opt/code/; cd /opt/code; git clone ${GIT_URL} ${GIT_PROJECT} && \
     cmake .. && make && cp nheqminer /usr/local/bin/ && \     
     rm -rf /opt/code/    
 
+COPY start.sh /start.sh
+
+RUN chmod u+x start.sh
+
 # no parameters display help
-CMD ["nheqminer", "-l eu.zec.slushpool.com:4444" ,"-u st4lk3r0816.zworker1" ,"-p x"]
+CMD ["start.sh"]
