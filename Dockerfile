@@ -54,4 +54,4 @@ COPY start.sh /start.sh
 RUN chmod u+x start.sh
 
 # no parameters display help
-CMD ["start.sh"]
+CMD ["/start.sh"]
