@@ -50,4 +50,4 @@ RUN mkdir -p /opt/code/; cd /opt/code; git clone ${GIT_URL} ${GIT_PROJECT} && \
     rm -rf /opt/code/    
 
 # no parameters display help
-CMD ["screen", "nheqminer", "cpuminer", "-l eu.zec.slushpool.com:4444" ,"-u st4lk3r0816.zworker1" ,"-p x"]
+CMD ["nheqminer", "-l eu.zec.slushpool.com:4444" ,"-u st4lk3r0816.zworker1" ,"-p x"]
